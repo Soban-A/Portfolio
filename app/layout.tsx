@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Syne, Space_Grotesk } from "next/font/google";
+import {Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
+const open_sans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--font-open-sans",
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-inter",
   weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Developer & Model",
+  title: "Soban Ali — Developer & Model",
   description: "Full-stack developer and model. Building clean digital experiences.",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${open_sans.variable} ${inter.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

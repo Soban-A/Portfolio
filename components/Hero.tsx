@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { personal } from "@/data/portfolio";
 import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/SocialIcons";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -18,11 +19,11 @@ export default function Hero() {
 
       {/* Grid pattern overlay */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.50]"
         style={{
           backgroundImage:
-            "linear-gradient(#f5a623 1px, transparent 1px), linear-gradient(90deg, #f5a623 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+            "linear-gradient(#caf0f8 1px, transparent 1px), linear-gradient(90deg, #caf0f8 1px, transparent 1px)",
+          backgroundSize: "90px 90px",
         }}
       />
 
@@ -51,13 +52,13 @@ export default function Hero() {
             >
               <h1
                 className="text-7xl sm:text-8xl lg:text-9xl font-black leading-none tracking-tight uppercase"
-                style={{ fontFamily: "var(--font-syne)" }}
+                style={{ fontFamily: "var(--font-open-sans)" }}
               >
                 <span className="text-white block">{personal.firstName}</span>
                 <span
                   className="block"
                   style={{
-                    WebkitTextStroke: "2px #f5a623",
+                    WebkitTextStroke: "2px #00b4d8",
                     color: "transparent",
                   }}
                 >
@@ -154,14 +155,13 @@ export default function Hero() {
               {/* Photo placeholder — replace with your actual photo */}
               <div className="w-full h-full rounded-2xl border-2 border-gold-500/30 bg-navy-700 flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-coral-500/5" />
-                <p className="text-slate-500 text-sm text-center px-8">
-                  Add your photo here
-                  <br />
-                  <span className="text-xs text-slate-600 mt-1 block">
-                    Replace with{" "}
-                    <code className="text-gold-500/70">public/photo.jpg</code>
-                  </span>
-                </p>
+                <Image
+                  src="/pfp.jpeg"
+                  alt="Soban Ali"
+                  width={240}
+                  height={240}
+                  className = "rounded object-cover"
+                />
               </div>
 
               {/* Decorative frame */}
@@ -169,11 +169,11 @@ export default function Hero() {
 
               {/* Floating stat cards */}
               <div className="absolute -left-12 top-1/4 bg-navy-800 border border-gold-500/20 rounded-xl px-4 py-3 shadow-xl">
-                <p className="text-gold-500 font-black text-2xl" style={{ fontFamily: "var(--font-syne)" }}>12+</p>
+                <p className="text-gold-500 font-black text-2xl" style={{ fontFamily: "var(--font-open-sans)" }}>12+</p>
                 <p className="text-slate-400 text-xs">Projects</p>
               </div>
               <div className="absolute -right-12 bottom-1/4 bg-navy-800 border border-gold-500/20 rounded-xl px-4 py-3 shadow-xl">
-                <p className="text-gold-500 font-black text-2xl" style={{ fontFamily: "var(--font-syne)" }}>3+</p>
+                <p className="text-gold-500 font-black text-2xl" style={{ fontFamily: "var(--font-open-sans)" }}>3+</p>
                 <p className="text-slate-400 text-xs">Years Exp.</p>
               </div>
             </div>

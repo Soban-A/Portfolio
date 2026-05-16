@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <h2
             className="text-5xl md:text-6xl font-black leading-tight text-white uppercase"
-            style={{ fontFamily: "var(--font-syne)" }}
+            style={{ fontFamily: "var(--font-open-sans)" }}
           >
             Let&apos;s Create
             <br />

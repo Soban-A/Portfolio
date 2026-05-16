@@ -33,7 +33,7 @@ export default function Navbar() {
         <a
           href="#"
           className="font-display font-bold text-xl tracking-tight"
-          style={{ fontFamily: "var(--font-syne)" }}
+          style={{ fontFamily: "var(--font-open-sans)" }}
         >
           <span className="text-gold-500">{personal.initials}</span>
           <span className="text-white/20 mx-1">·</span>

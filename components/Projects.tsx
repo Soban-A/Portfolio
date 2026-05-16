@@ -19,7 +19,7 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <h2
             className="text-5xl md:text-6xl font-black leading-tight text-white uppercase"
-            style={{ fontFamily: "var(--font-syne)" }}
+            style={{ fontFamily: "var(--font-open-sans)" }}
           >
             Things I&apos;ve
             <br />
@@ -49,7 +49,7 @@ export default function Projects() {
               {/* Project number */}
               <span
                 className="text-6xl font-black opacity-[0.04] absolute top-4 right-6 select-none"
-                style={{ fontFamily: "var(--font-syne)", color: project.accent }}
+                style={{ fontFamily: "var(--font-open-sans)", color: project.accent }}
               >
                 {String(project.id).padStart(2, "0")}
               </span>
@@ -57,7 +57,7 @@ export default function Projects() {
               <div className="flex-1">
                 <h3
                   className="text-xl font-bold text-white mb-3 group-hover:text-gold-400 transition-colors"
-                  style={{ fontFamily: "var(--font-syne)" }}
+                  style={{ fontFamily: "var(--font-open-sans)" }}
                 >
                   {project.title}
                 </h3>

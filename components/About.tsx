@@ -19,7 +19,7 @@ export default function About() {
           <div>
             <h2
               className="text-5xl md:text-6xl font-black leading-tight text-white mb-8 uppercase"
-              style={{ fontFamily: "var(--font-syne)" }}
+              style={{ fontFamily: "var(--font-open-sans)" }}
             >
               The Person
               <br />
